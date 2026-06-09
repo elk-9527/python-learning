@@ -3,7 +3,12 @@
     "allow": [
       "Bash(gh auth *)",
       "Bash(git init *)",
-      "Bash(gh repo *)"
+      "Bash(gh repo *)",
+      "Bash(cd /tmp/vercel-skills/skills/find-skills && echo \"=== contents ===\" && find . -type f | sort && echo && echo \"=== SKILL.md head ===\" && head -30 SKILL.md 2>/dev/null)",
+      "Read(//tmp/vercel-skills/skills/**)",
+      "Bash(mkdir -p /d/documents/Python/.claude/skills)",
+      "Bash(cp -r /tmp/vercel-skills/skills/find-skills /d/documents/Python/.claude/skills/)",
+      "Bash(rm -rf /tmp/vercel-skills)"
     ]
   }
 }

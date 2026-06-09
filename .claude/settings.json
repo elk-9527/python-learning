@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(npx skills *)",
+      "Bash(echo \"=== 项目目录 ===\" && ls -la \"d:/documents/Python/CLAUDE.md\" 2>&1; echo \"=== 全局用户目录 ===\" && ls -la \"$HOME/.claude/CLAUDE.md\" 2>&1)",
+      "Read(//c/Users/Lenovo/.claude/**)",
+      "Bash(ls -la \"/c/Users/Lenovo/Desktop/claude code/\" 2>&1)",
+      "Read(//c/Users/Lenovo/Desktop/claude code//**)"
     ]
   }
 }
