@@ -1,0 +1,33 @@
+模拟数据集：[1]
+1.simulation
+	expression_matrix，cell_labels
+分支1：Start—>Right_Mid—>Right_End
+分支2：Start—>Left_Mid—>Left_End 
+2.三分支simulation：
+	expression_matrix_3，cell_labels_3
+分支1：Start—>Right_Mid—>Right_End1
+分支2：Start—>Right_Mid—>Right_End2
+分支3：Start—>Left_Mid—>Left_End 
+分支：
+真实数据集：
+3.human myeloid:[2]
+	分支1：0—>1—>2
+	分支2：0—>1—>3
+4.mouse pancreatic:[3]
+	分支1：Ngn3 low EP—>Ngn3 high EP —>Fev+ —>Alpha
+	分支2：Ngn3 low EP—>Ngn3 high EP —>Fev+—>Beta
+	分支3：Ngn3 low EP—>Ngn3 high EP —>Fev+—>Delta:
+	分支4：Ngn3 low EP—>Ngn3 high EP —>Fev+—>Epsilon
+5.mouse gastrulation erythroid:[4]
+	Blood progenitors 1 —>Blood progenitors 2 —> Erythroid1 —> Erythroid2 —> Erythroid3
+6.developing human forebrain:[4]
+	Radial glia 1 —>Radial glia 2 —>Neuroblast 1 —>Neuroblast 2Immature neuron 1 —>Immature neuron 2 —>Neuron 1 —>Neuron 2 
+
+数据来源文献：
+[1] Papadopoulos N, Parra RG, Söding J (2019) PROSSTT: probabilistic simulation of single-cell RNA-seq data for complex differentiation processes. Bioinformatics 35:3517-3519. https://doi.org/10.1093/bioinformatics/btz078
+
+[2] Qu R, Cheng X, Sefik E et al (2025) Gene trajectory inference for single-cell data by optimal transport metrics. Nat Biotechnol 43:258–268. https://doi.org/10.1038/s41587-024-02186-3
+
+[3] Long C, Li H, Li Z et al (2026) Refining cell subpopulation identification and cell fate mapping using cell energy. Expert Syst Appl 296:128999. https://doi.org/10.1016/j.eswa.2025.128999
+
+[4] Ge M, Miao J, Qi J et al (2025) TIVelo: RNA velocity estimation leveraging cluster-level trajectory inference. Nat Commun 16:6258. https://doi.org/10.1038/s41467-025-61628-x

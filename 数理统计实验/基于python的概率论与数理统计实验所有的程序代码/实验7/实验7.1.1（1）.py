@@ -1,0 +1,37 @@
+import numpy as np
+X=[-2,-1,0,1,2] 
+p=[0.3,0.1,0.2,0.1,0.3] 
+Y=[]
+xt1=[]
+xt2=[]
+yt1=[]
+yt2=[]
+for i in range(5):
+    xm1=X[i]*p[i]
+    #计算X[i]*p[i]，把结果放入列表中
+    xt1.append(xm1) 
+    xm2=X[i]**2*p[i]
+    xt2.append(xm2)
+    ym1=X[i]**2-1
+    #求Y的分布律
+    Y.append(ym1) 
+    #计算y[i]*p[i]，把结果放入列表中，求和为E（X)
+    ym2=Y[i]*p[i]
+    #求Y的期望
+    yt1.append(ym2) 
+    #计算y[i]*p[i]，把结果放入列表中，求和为E(Y)
+    ym3=Y[i]**2*p[i] 
+    #求Y的平方的期望
+    yt2.append(ym3) 
+#求X的期望
+EX=np.sum(xt1) 
+#求X的平方的期望
+EX2=np.sum(xt2) 
+#求X的方差
+DX=EX2-EX**2 
+#求Y的期望
+EY=np.sum(yt1) 
+#求Y的方差
+EY2=np.sum(yt2) 
+DY=EY2-EY**2
+print('X的期望为',EX,'X的方差为',DX,'Y的期望为',EY,'Y的方差为',DY)
